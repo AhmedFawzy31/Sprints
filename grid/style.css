@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background-color: #000;
+}
+.container {
+  padding: 20px 100px;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex {
+  display: flex;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul a {
+  margin-left: 20px;
+}
+nav a {
+  color: #fff;
+}
+ul li:first-of-type a {
+  margin-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.logo a {
+  font-size: 35px;
+}

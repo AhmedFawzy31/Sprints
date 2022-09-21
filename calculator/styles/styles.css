@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: #eee3c1ff;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+.container {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.calc {
+  border-radius: 20px;
+  background-color: #111111ff;
+  color: #fff;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(89, 89, 89, 1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(89, 89, 89, 1);
+  box-shadow: 0px 0px 20px 1px rgba(89, 89, 89, 1);
+}
+.calc-container {
+  min-width: 80%;
+}
+.calc-container .flex {
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.calc-container .operations .flex:last-of-type {
+  margin: 0;
+}
+.compute {
+  flex-grow: 1;
+}
+ul:not(.display) li {
+  background-color: #0761d1ff;
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display {
+  padding: 30px 10px;
+  min-height: 50px;
+  /* background: black; */
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.output {
+  padding: 30px 20px;
+  background-color: #ea558dff;
+  border-radius: 30px;
+  margin-top: 20px;
+  min-height: 35px;
+}
+.lhs,
+.rhs {
+  min-width: 100px;
+}
+.rhs {
+  display: flex;
+  justify-content: flex-end;
+}
+.operand {
+  display: flex;
+  justify-content: center;
+  min-width: 30px;
+}
+.calc-container .flex li {
+  transition: 300ms all ease-in-out;
+}
+.calc-container .flex:not(.display) li:hover {
+  opacity: 50%;
+}
